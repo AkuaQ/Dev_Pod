@@ -1,0 +1,6 @@
+framework module Dev_Pod {
+  umbrella header "Dev_Pod-umbrella.h"
+
+  export *
+  module * { export * }
+}

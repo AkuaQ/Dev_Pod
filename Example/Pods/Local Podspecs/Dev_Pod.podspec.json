@@ -1,0 +1,22 @@
+{
+  "name": "Dev_Pod",
+  "version": "0.1.0",
+  "summary": "A short description of Dev_Pod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AkuaQ/Dev_Pod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AkuaQ": "AAfraneOkese@jhb.dvt.co.za"
+  },
+  "source": {
+    "git": "https://github.com/AkuaQ/Dev_Pod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Dev_Pod/Classes/**/*"
+}
