@@ -1,3 +1,2 @@
-public func hello(){
-    
+public func hello() {
 }
