@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Dev_Pod/Classes/**/*'
+  s.source_files = 'Dev_Pod/Classes/**/*.swift'
   
   # s.resource_bundles = {
   #   'Dev_Pod' => ['Dev_Pod/Assets/*.png']
