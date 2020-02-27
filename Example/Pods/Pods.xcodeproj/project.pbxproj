@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17A3D28E6F80F26CA686E109945C3EB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		374F4DEC2407A5B80074E2DB /* Recipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374F4DEB2407A5B80074E2DB /* Recipe1.swift */; };
 		399617032C5794B295FACD822635E653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		435ED36E489318C28A50F6EF8614FCCB /* Pods-Dev_Pod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAD78A06EDF3157AA89AE39F24507AC /* Pods-Dev_Pod_Example-dummy.m */; };
 		531A24C87D424DB639F5A379403A5586 /* Pods-Dev_Pod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B92353CE25CF69A3F166511DF0F5DDA1 /* Pods-Dev_Pod_Tests-dummy.m */; };
@@ -44,6 +45,7 @@
 		2B0CEBF1C87A4A8FF911178A238DE545 /* Pods-Dev_Pod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dev_Pod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		316495DDAE4BD1704EDD7BEC3806EDC6 /* Dev_Pod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dev_Pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		374F4DEB2407A5B80074E2DB /* Recipe1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe1.swift; sourceTree = "<group>"; };
 		4175748180762C56E991CB840CC1EFBB /* Dev_Pod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dev_Pod.modulemap; sourceTree = "<group>"; };
 		4240617C7E6A440E4B79EB07D8BFBBD9 /* Pods-Dev_Pod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dev_Pod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		49FE7EEC1AEE0BEEBF3B2CF1620D7F04 /* Pods-Dev_Pod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dev_Pod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				BD4F19E8142B9B882424C12F33643DBB /* RecipeViewModel.swift */,
 				7B8FF17C3FA4EAD669780DBD9AD0D9FD /* Pod */,
 				86BCAEDB8F53001F51632513076B8EDE /* Support Files */,
+				374F4DEB2407A5B80074E2DB /* Recipe1.swift */,
 			);
 			name = Dev_Pod;
 			path = ../..;
@@ -387,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA2BED11E7491BABDFFEB2D0E8B0247 /* Dev_Pod-dummy.m in Sources */,
+				374F4DEC2407A5B80074E2DB /* Recipe1.swift in Sources */,
 				8836AAB7908B37AB0868A37118D7BD1D /* RecipeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
