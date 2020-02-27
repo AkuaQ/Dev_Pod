@@ -128,13 +128,21 @@
 			path = "Target Support Files/Pods-Dev_Pod_Example";
 			sourceTree = "<group>";
 		};
+		374F4DED2407A68E0074E2DB /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				374F4DEB2407A5B80074E2DB /* Recipe1.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		503179C818998D0FCE1D250FB3262A0B /* Dev_Pod */ = {
 			isa = PBXGroup;
 			children = (
+				374F4DED2407A68E0074E2DB /* Files */,
 				BD4F19E8142B9B882424C12F33643DBB /* RecipeViewModel.swift */,
 				7B8FF17C3FA4EAD669780DBD9AD0D9FD /* Pod */,
 				86BCAEDB8F53001F51632513076B8EDE /* Support Files */,
-				374F4DEB2407A5B80074E2DB /* Recipe1.swift */,
 			);
 			name = Dev_Pod;
 			path = ../..;
