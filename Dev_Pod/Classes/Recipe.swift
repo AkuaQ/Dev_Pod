@@ -7,20 +7,26 @@
 
 import Foundation
 public struct FoodResults: Decodable {
-    var resultCount: [FoodDetails]
+    public var resultCount: [FoodDetails]
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case resultCount = "results"
     }
 }
 
 public struct FoodResponse: Decodable {
-    var foods: FoodResults
+    public var foods: FoodResults
 }
 
 public struct FoodDetails: Decodable {
-    var title: String
-    var ingredients: String
-    var href: String
-    var thumbnail: String
+    public var title: String
+    public var ingredients: String
+    public var href: String
+    public var thumbnail: String
+    public init() {
+        title = ""
+        ingredients = ""
+        href = ""
+        thumbnail = ""
+    }
 }
