@@ -1,7 +1,7 @@
 {
   "name": "Dev_Pod",
   "version": "0.1.0",
-  "summary": "A short description of Dev_Pod.",
+  "summary": "Dev_Pod holds the logic of firstApp",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/AkuaQ/Dev_Pod",
   "license": {
@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Dev_Pod/Classes/**/*"
+  "source_files": "Dev_Pod/**/*.swift"
 }
