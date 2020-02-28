@@ -7,15 +7,14 @@
 
 import Foundation
 
+public struct FoodRequest {
+    public var foodQuery: String
 
-struct FoodRequest {
-    var foodQuery: String
+    public let defaultSession = URLSession(configuration: .default)
 
-    let defaultSession = URLSession(configuration: .default)
+    public var dataTask: URLSessionDataTask?
 
-    var dataTask: URLSessionDataTask?
-
-    func getSearchResult(completionHandler: @escaping([FoodDetails]) -> Void) {
+    public func getSearchResult(completionHandler: @escaping([FoodDetails]) -> Void) {
        dataTask?.cancel()
 
         let resourceString = "http://www.recipepuppy.com/api/?"
