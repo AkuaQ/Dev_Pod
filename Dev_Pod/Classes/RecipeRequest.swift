@@ -41,4 +41,8 @@ public struct FoodRequest {
         }
         dataTask.resume()
     }
+
+    public init(foodQuery: String) {
+        self.foodQuery = foodQuery
+    }
 }
