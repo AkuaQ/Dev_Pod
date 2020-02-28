@@ -31,5 +31,5 @@ public class Utilities {
         textfield.layer.borderColor = UIColor.red.cgColor
         textfield.layer.cornerRadius = 6
     }
-    public init(){}
+    public init() {}
 }
