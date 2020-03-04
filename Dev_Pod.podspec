@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Dev_Pod/**/*.swift'
+  s.source_files = 'Dev_Pod/**/*'
   
   # s.resource_bundles = {
   #   'Dev_Pod' => ['Dev_Pod/Assets/*.png']
@@ -39,4 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SwiftLint'
+  s.dependency 'Firebase/Analytics'
+  s.dependency 'Firebase/Auth'
+  s.dependency 'Firebase/Database'
 end
