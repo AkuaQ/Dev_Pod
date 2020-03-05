@@ -1,5 +1,6 @@
 # Dev_Pod
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fd98aad9ad6246458c81b2d912eaf19f)](https://app.codacy.com/manual/AkuaQ/Dev_Pod?utm_source=github.com&utm_medium=referral&utm_content=AkuaQ/Dev_Pod&utm_campaign=Badge_Grade_Dashboard)
 [![CI Status](https://img.shields.io/travis/AkuaQ/Dev_Pod.svg?style=flat)](https://travis-ci.org/AkuaQ/Dev_Pod)
 [![Version](https://img.shields.io/cocoapods/v/Dev_Pod.svg?style=flat)](https://cocoapods.org/pods/Dev_Pod)
 [![License](https://img.shields.io/cocoapods/l/Dev_Pod.svg?style=flat)](https://cocoapods.org/pods/Dev_Pod)
