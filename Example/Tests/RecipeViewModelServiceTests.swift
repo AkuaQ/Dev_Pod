@@ -18,12 +18,21 @@ class RecipeViewModelServiceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testGivenSearchCredsReturnSearchResultTitle() {
+    func testGivenSearchCredsReturnSearchResultTitleSuccess() {
         var searchResultTitle = ""
         let foodRequest = FoodRequest(foodQuery: "fish")
         foodRequest.getSearchResult {(result) in
                         searchResultTitle = result[0].title
             XCTAssertEqual(searchResultTitle, "Fish Marinade for People Who Hate Fish")
+        }
+    }
+    
+    func testGivenSearchCredsReturnSearchResultTitleFailure() {
+        var searchResultTitle = ""
+        let foodRequest = FoodRequest(foodQuery: "fishy")
+        foodRequest.getSearchResult {(result) in
+                        searchResultTitle = result[0].title
+            XCTAssertNotEqual(searchResultTitle, "Fish Marinade for People Who Hate Fish")
         }
     }
 
