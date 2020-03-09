@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
     @IBOutlet weak var textFieldOne: UITextField!
-    
     @IBOutlet weak var textFieldTwo: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
     func setUpElements() {
         //Style the elements
         Utilities.styleFilledButton(buttonOne)
