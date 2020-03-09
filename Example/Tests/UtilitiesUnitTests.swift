@@ -16,8 +16,8 @@ class UtilitiesUnitTests: XCTestCase {
     func testGivenCorrectPasswordReturnTrue() {
         XCTAssertTrue(Constants.isPasswordValid("HelloWorld@"))
     }
-    
-    func testUtilities(){
+
+    func testGivenCreatedUtilitiesReturnNotNil() {
         let utilities = Utilities()
         XCTAssertNotNil(utilities)
     }
