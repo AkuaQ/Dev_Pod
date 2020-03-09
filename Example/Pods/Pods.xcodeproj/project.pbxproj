@@ -19,7 +19,6 @@
 		5F924BBEF5565ACC19DA7E70B0580D1A /* Pods-Dev_Pod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A09D72DDA3E42349C6701CF3452EEFB /* Pods-Dev_Pod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65B3176001AE79A0AC51822A6DA136B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8D4C8D18ADD7B8F7BF1EC6D51AA246C9 /* Dev_Pod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B98D94FFAA19EA1F56C30D5DF87C6D /* Dev_Pod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D047BBF1C9A92B8D81BEDF1BBD41E834 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F321062390FBF18388797D2CC8DA911 /* RecipeViewModel.swift */; };
 		F93B6B742CD3B1C2856B041396AE16BC /* Pods-Dev_Pod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B837DA047AACA56395B67011267EFBBD /* Pods-Dev_Pod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		42B40A99D2B16C1AB3DA52E1D12E7079 /* Dev_Pod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dev_Pod.modulemap; sourceTree = "<group>"; };
 		4724ECEB0AAC3F38A15DA55186230E8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		49FE7EEC1AEE0BEEBF3B2CF1620D7F04 /* Pods-Dev_Pod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Dev_Pod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F321062390FBF18388797D2CC8DA911 /* RecipeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecipeViewModel.swift; path = Dev_Pod/Classes/RecipeViewModel.swift; sourceTree = "<group>"; };
 		5F860A36193FAE13AC1858D5803E0B9C /* Dev_Pod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dev_Pod-prefix.pch"; sourceTree = "<group>"; };
 		6284FD37F160D7B74C9178D078EC1E22 /* Pods-Dev_Pod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dev_Pod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6A09D72DDA3E42349C6701CF3452EEFB /* Pods-Dev_Pod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dev_Pod_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 			children = (
 				37964B2E240911BF007593FD /* View */,
 				DD200710D4F2A98CA07B7C9A414D50BB /* Recipe.swift */,
-				4F321062390FBF18388797D2CC8DA911 /* RecipeViewModel.swift */,
 				6F30BA092935C54E712C09D167429E26 /* Pod */,
 				8739B8CC364CBFC220A7B56FCE7BF2C9 /* Support Files */,
 				37964B29240906A7007593FD /* RecipeRequest.swift */,
@@ -418,7 +415,6 @@
 			files = (
 				54B412CAA9D8FCB734A1145B6A3C672E /* Dev_Pod-dummy.m in Sources */,
 				00991B9F885FF329FA96E3ED87FE0119 /* Recipe.swift in Sources */,
-				D047BBF1C9A92B8D81BEDF1BBD41E834 /* RecipeViewModel.swift in Sources */,
 				37964B30240911E6007593FD /* Utilities.swift in Sources */,
 				37964B2A240906A7007593FD /* RecipeRequest.swift in Sources */,
 				37964B3224091AA3007593FD /* Constants.swift in Sources */,

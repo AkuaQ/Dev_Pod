@@ -1,11 +1,12 @@
 import XCTest
-import Dev_Pod
+@testable import Dev_Pod
 
 class UtilitiesUnitTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
 
     func testGivenIncorrectPasswordReturnFalse() {
@@ -14,6 +15,11 @@ class UtilitiesUnitTests: XCTestCase {
 
     func testGivenCorrectPasswordReturnTrue() {
         XCTAssertTrue(Constants.isPasswordValid("HelloWorld@"))
+    }
+    
+    func testUtilities(){
+        let utilities = Utilities()
+        XCTAssertNotNil(utilities)
     }
 
     func testPerformanceExample() {
