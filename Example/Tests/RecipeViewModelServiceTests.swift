@@ -26,7 +26,7 @@ class RecipeViewModelServiceTests: XCTestCase {
             XCTAssertEqual(searchResultTitle, "Fish Marinade for People Who Hate Fish")
         }
     }
-    
+
     func testGivenSearchCredsReturnSearchResultTitleFailure() {
         var searchResultTitle = ""
         let foodRequest = FoodRequest(foodQuery: "fishy")
