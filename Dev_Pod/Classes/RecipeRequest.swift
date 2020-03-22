@@ -18,7 +18,37 @@ public struct FoodRequest {
        dataTask?.cancel()
 
         let resourceString = "http://www.recipepuppy.com/api/?"
-        let resourceQuery = "i=\(foodQuery)"
+        let countSpaces = foodQuery.replacingOccurrences(of: " ", with: "+")
+        let resourceQuery = "i=\(countSpaces)"
+
+        guard let resourceURL = URL(string: resourceString + resourceQuery) else {fatalError()}
+        let dataTask = URLSession.shared.dataTask(with: resourceURL) {data, response, error in
+
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data,
+                let response = response as? HTTPURLResponse,
+                response.statusCode == 200 {
+                print(data)
+
+                do {
+                    let foodList = try JSONDecoder().decode(FoodResults.self, from: data)
+
+                    completionHandler(foodList.resultCount)
+                } catch let error {
+                    print(error)
+                }
+            }
+        }
+        dataTask.resume()
+    }
+
+    public func getRecipeResult(completionHandler: @escaping([FoodDetails]) -> Void) {
+       dataTask?.cancel()
+
+        let resourceString = "http://www.recipepuppy.com/api/?"
+        let countSpaces = foodQuery.replacingOccurrences(of: " ", with: "+")
+        let resourceQuery = "q=\(countSpaces)"
 
         guard let resourceURL = URL(string: resourceString + resourceQuery) else {fatalError()}
         let dataTask = URLSession.shared.dataTask(with: resourceURL) {data, response, error in
