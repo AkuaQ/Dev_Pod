@@ -30,7 +30,7 @@ This app searches through a collection of recipes of food inside of your kitchen
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Dev_Pod/**/*'
+  s.source_files = 'Dev_Pod/Classes/**/*'
   
   # s.resource_bundles = {
   #   'Dev_Pod' => ['Dev_Pod/Assets/*.png']
