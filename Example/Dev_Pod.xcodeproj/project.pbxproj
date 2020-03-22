@@ -84,6 +84,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3761270E2427BEB0008EBAAE /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				375E7B6F24122E5400536863 /* RecipeModelUnitTests.swift */,
+				375E7B992415FBE900536863 /* RecipeViewModelServiceTests.swift */,
+			);
+			name = Recipes;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -130,10 +139,9 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3761270E2427BEB0008EBAAE /* Recipes */,
 				607FACEB1AFB9204008FA782 /* UtilitiesUnitTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
-				375E7B6F24122E5400536863 /* RecipeModelUnitTests.swift */,
-				375E7B992415FBE900536863 /* RecipeViewModelServiceTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";

@@ -9,6 +9,7 @@ import Foundation
 
 public struct FoodRequest {
     public var foodQuery: String
+    public var typeQuery: String
 
     public let defaultSession = URLSession(configuration: .default)
 
@@ -18,7 +19,8 @@ public struct FoodRequest {
        dataTask?.cancel()
 
         let resourceString = "http://www.recipepuppy.com/api/?"
-        let resourceQuery = "i=\(foodQuery)"
+        let countSpaces = foodQuery.replacingOccurrences(of: " ", with: "+")
+        let resourceQuery = "\(typeQuery)=\(countSpaces)"
 
         guard let resourceURL = URL(string: resourceString + resourceQuery) else {fatalError()}
         let dataTask = URLSession.shared.dataTask(with: resourceURL) {data, response, error in
@@ -42,7 +44,8 @@ public struct FoodRequest {
         dataTask.resume()
     }
 
-    public init(foodQuery: String) {
+    public init(foodQuery: String, typeQuery: String) {
         self.foodQuery = foodQuery
+        self.typeQuery = typeQuery
     }
 }
