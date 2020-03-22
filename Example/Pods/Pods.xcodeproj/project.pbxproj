@@ -138,7 +138,8 @@
 				DD200710D4F2A98CA07B7C9A414D50BB /* Recipe.swift */,
 				37964B29240906A7007593FD /* RecipeRequest.swift */,
 			);
-			path = Recipes;
+			name = Recipes;
+			path = Dev_Pod/Classes;
 			sourceTree = "<group>";
 		};
 		37964B2E240911BF007593FD /* View */ = {
