@@ -38,8 +38,10 @@ This app searches through a collection of recipes of food inside of your kitchen
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  s.static_framework = true
+  s.dependency 'Firebase'
   s.dependency 'SwiftLint'
-  #s.dependency 'Firebase/Analytics'
-  #s.dependency 'Firebase/Auth'
-  #s.dependency 'Firebase/Database'
+  s.dependency 'Firebase/Analytics'
+  s.dependency 'Firebase/Auth'
+  s.dependency 'Firebase/Database'
 end
