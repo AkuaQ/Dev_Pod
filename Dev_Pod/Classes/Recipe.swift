@@ -19,8 +19,6 @@ public struct FoodResponse: Decodable {
     public var foods: FoodResults
 }
 
-
-
 public struct FoodDetails: Decodable {
     public var title: String
     public var ingredients: String
