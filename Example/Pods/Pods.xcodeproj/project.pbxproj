@@ -11,6 +11,8 @@
 		376127152427C708008EBAAE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376127142427C708008EBAAE /* Recipe.swift */; };
 		37964B30240911E6007593FD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37964B2F240911E6007593FD /* Utilities.swift */; };
 		37964B3224091AA3007593FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37964B3124091AA3007593FD /* Constants.swift */; };
+		37A33657242E7B19001EB8D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A33656242E7B19001EB8D0 /* User.swift */; };
+		37A33659242E7D85001EB8D0 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A33658242E7D85001EB8D0 /* UserViewModel.swift */; };
 		399617032C5794B295FACD822635E653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3ABFDF04EC8429035B566407BBAFDE6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		435ED36E489318C28A50F6EF8614FCCB /* Pods-Dev_Pod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAD78A06EDF3157AA89AE39F24507AC /* Pods-Dev_Pod_Example-dummy.m */; };
@@ -49,6 +51,8 @@
 		376127142427C708008EBAAE /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		37964B2F240911E6007593FD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		37964B3124091AA3007593FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37A33656242E7B19001EB8D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		37A33658242E7D85001EB8D0 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		4240617C7E6A440E4B79EB07D8BFBBD9 /* Pods-Dev_Pod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dev_Pod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		42B40A99D2B16C1AB3DA52E1D12E7079 /* Dev_Pod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dev_Pod.modulemap; sourceTree = "<group>"; };
 		4724ECEB0AAC3F38A15DA55186230E8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -132,24 +136,50 @@
 			path = "Target Support Files/Pods-Dev_Pod_Example";
 			sourceTree = "<group>";
 		};
-		376127102427C648008EBAAE /* RecipeList */ = {
+		376127102427C648008EBAAE /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
 				376127122427C68A008EBAAE /* RecipeRequest.swift */,
 				376127142427C708008EBAAE /* Recipe.swift */,
 			);
-			name = RecipeList;
-			path = Dev_Pod/Classes;
+			name = Recipe;
+			path = Dev_Pod/Classes/Recipe;
 			sourceTree = "<group>";
 		};
-		37964B2E240911BF007593FD /* View */ = {
+		37A33653242E4E02001EB8D0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				37A3365A242E80D5001EB8D0 /* ViewModel */,
+				37A33655242E7AF3001EB8D0 /* Model */,
+				37A33654242E4E5E001EB8D0 /* View */,
+			);
+			name = Login;
+			path = Dev_Pod/Classes/Login;
+			sourceTree = "<group>";
+		};
+		37A33654242E4E5E001EB8D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				37964B2F240911E6007593FD /* Utilities.swift */,
 				37964B3124091AA3007593FD /* Constants.swift */,
 			);
-			name = View;
-			path = Dev_Pod/Classes;
+			path = View;
+			sourceTree = "<group>";
+		};
+		37A33655242E7AF3001EB8D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37A33656242E7B19001EB8D0 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37A3365A242E80D5001EB8D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37A33658242E7D85001EB8D0 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6F30BA092935C54E712C09D167429E26 /* Pod */ = {
@@ -195,8 +225,8 @@
 		8B092A00FC0A22ADD53EBADD2A959045 /* Dev_Pod */ = {
 			isa = PBXGroup;
 			children = (
-				376127102427C648008EBAAE /* RecipeList */,
-				37964B2E240911BF007593FD /* View */,
+				37A33653242E4E02001EB8D0 /* Login */,
+				376127102427C648008EBAAE /* Recipe */,
 				6F30BA092935C54E712C09D167429E26 /* Pod */,
 				8739B8CC364CBFC220A7B56FCE7BF2C9 /* Support Files */,
 			);
@@ -424,8 +454,10 @@
 			files = (
 				54B412CAA9D8FCB734A1145B6A3C672E /* Dev_Pod-dummy.m in Sources */,
 				37964B30240911E6007593FD /* Utilities.swift in Sources */,
+				37A33657242E7B19001EB8D0 /* User.swift in Sources */,
 				37964B3224091AA3007593FD /* Constants.swift in Sources */,
 				376127132427C68A008EBAAE /* RecipeRequest.swift in Sources */,
+				37A33659242E7D85001EB8D0 /* UserViewModel.swift in Sources */,
 				376127152427C708008EBAAE /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
