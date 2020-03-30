@@ -41,7 +41,8 @@ This app searches through a collection of recipes of food inside of your kitchen
   s.static_framework = true
   s.dependency 'Firebase'
   s.dependency 'SwiftLint'
+  s.dependency 'Firebase/Core'
   s.dependency 'Firebase/Analytics'
   s.dependency 'Firebase/Auth'
-  s.dependency 'Firebase/Database'
+  s.dependency 'Firebase/Firestore'
 end
