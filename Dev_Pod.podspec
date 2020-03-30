@@ -36,7 +36,7 @@ This app searches through a collection of recipes of food inside of your kitchen
   #   'Dev_Pod' => ['Dev_Pod/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Dev_Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.static_framework = true
   s.dependency 'Firebase'
