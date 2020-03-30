@@ -11586,8 +11586,7 @@
 				37E75D5C24324F1D0014AA9C /* AnalyticsRecipeRepo.swift */,
 				37E75D5E24324F450014AA9C /* AnalyticsRecipeRepoConstants.swift */,
 			);
-			name = AnalyticsRepo;
-			path = ../Login/AnalyticsRepo;
+			path = AnalyticsRepo;
 			sourceTree = "<group>";
 		};
 		37E75D512432499B0014AA9C /* Service */ = {
