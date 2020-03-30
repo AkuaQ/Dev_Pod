@@ -9,11 +9,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-<<<<<<< HEAD:Dev_Pod/Classes/Login/Model/UserModel.swift
 public struct UserModel: UserModelProtocol {
-=======
-struct UserModel: UserModelProtocol {
->>>>>>> parent of 02b2c1e... Merge remote-tracking branch 'origin/master':Dev_Pod/Classes/Login/Model/User.swift
     public var firstName: String
     public var lastName: String
     public var email: String

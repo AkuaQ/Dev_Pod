@@ -940,6 +940,10 @@
 		37B7A8719796F3CE845E2FC270A87C24 /* timer_manager.h in Copy src/core/lib/iomgr Private Headers */ = {isa = PBXBuildFile; fileRef = A12BFD73DAA5198E9A9D5BA6A7F81F5E /* timer_manager.h */; };
 		37BF462EED137580DB0EFA32D13582A5 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7503EFE3710BDA5BAC27C88E4AC19D86 /* internal.h */; };
 		37E12E10F81A29B5F878B04D2B54E2A6 /* tls13_server.cc in Sources */ = {isa = PBXBuildFile; fileRef = A48DCB0F8BAE6AFDDD7388EBE539BFB4 /* tls13_server.cc */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
+		37E75D68243279C00014AA9C /* AnalyticsRecipeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D67243279C00014AA9C /* AnalyticsRecipeRepo.swift */; };
+		37E75D6A243279F20014AA9C /* AnalyticsRecipeRepoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D69243279F20014AA9C /* AnalyticsRecipeRepoConstants.swift */; };
+		37E75D6C24327A170014AA9C /* AnalyticsLoginRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D6B24327A170014AA9C /* AnalyticsLoginRepo.swift */; };
+		37E75D6E24327A420014AA9C /* AnalyticsLoginRepoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D6D24327A420014AA9C /* AnalyticsLoginRepoConstants.swift */; };
 		37ECD01213A65709CBDBA68FCC362C2E /* json_common.h in Copy src/core/lib/json Private Headers */ = {isa = PBXBuildFile; fileRef = 2C28C0CB169746742C13B2DF4F0C7C02 /* json_common.h */; };
 		37FEFF97DBD25BF8B782EBE591F27FA4 /* status_util.h in Copy src/core/lib/channel Private Headers */ = {isa = PBXBuildFile; fileRef = 2B181CE1303FEC732FB0B6BE826C0CE7 /* status_util.h */; };
 		380A3DA74DF383965545762CB04C6A19 /* pollset_set.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F402C1C1E46263DCD67414F3AC1161 /* pollset_set.h */; };
@@ -3002,7 +3006,7 @@
 		C59988C949433C5543CF313B9CCCADF3 /* pkcs7.c in Sources */ = {isa = PBXBuildFile; fileRef = 29F2AC1995ABE3A3B7ECE646547460ED /* pkcs7.c */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
 		C5C37FE3952EB61E31C7B3E06CC53552 /* sync.h in Copy include/grpc/impl/codegen Public Headers */ = {isa = PBXBuildFile; fileRef = E8301BF241AFB1828F69ED29DAD5CA58 /* sync.h */; };
 		C5D567307F283E3B6AA65EA9B9F3BD2D /* FIRSignUpNewUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F91C3BAB8D5D431149A34F26CCF2A6FD /* FIRSignUpNewUserRequest.m */; };
-		C5FAFB957AE663D0C1D96F3DD1EECC31 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EE0E1008AB434F2B2F3A96A273C56E /* User.swift */; };
+		C5FAFB957AE663D0C1D96F3DD1EECC31 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EE0E1008AB434F2B2F3A96A273C56E /* UserModel.swift */; };
 		C5FC2F7036BB9AA0257758103B80592D /* patch_mutation.cc in Sources */ = {isa = PBXBuildFile; fileRef = E4C5AA1EEAEA25B8E4DFDB3FBB7C6026 /* patch_mutation.cc */; settings = {COMPILER_FLAGS = "$(inherited) -Wreorder -Werror=reorder -Wno-comma -fno-objc-arc"; }; };
 		C6472B961EA7315F1DBB3A02D11AE4E6 /* grpc_ares_wrapper.cc in Sources */ = {isa = PBXBuildFile; fileRef = 146D3187F729695CB15BFFEB86A641A7 /* grpc_ares_wrapper.cc */; settings = {COMPILER_FLAGS = "-DGRPC_ARES=0 -DPB_FIELD_32BIT -DGRPC_SHADOW_BORINGSSL_SYMBOLS -fno-objc-arc"; }; };
 		C6532F5306988194C734EAD91A6AA13A /* FIROptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DB6098503573699E2A292C88113096 /* FIROptions.m */; };
@@ -8012,6 +8016,10 @@
 		37A3366E2432278D001EB8D0 /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		37B8D421E356FF1678AC1C52825FDD0D /* proto_buffer_writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = proto_buffer_writer.h; path = include/grpcpp/support/proto_buffer_writer.h; sourceTree = "<group>"; };
 		37E750DD165136709389C2F69FE5BE91 /* lockfree_event.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lockfree_event.h; path = src/core/lib/iomgr/lockfree_event.h; sourceTree = "<group>"; };
+		37E75D67243279C00014AA9C /* AnalyticsRecipeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRecipeRepo.swift; sourceTree = "<group>"; };
+		37E75D69243279F20014AA9C /* AnalyticsRecipeRepoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRecipeRepoConstants.swift; sourceTree = "<group>"; };
+		37E75D6B24327A170014AA9C /* AnalyticsLoginRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLoginRepo.swift; sourceTree = "<group>"; };
+		37E75D6D24327A420014AA9C /* AnalyticsLoginRepoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLoginRepoConstants.swift; sourceTree = "<group>"; };
 		3803E32B6F9539211D81316BF91B986C /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = crypto/bytestring/internal.h; sourceTree = "<group>"; };
 		38124623729A5CEF052AEE7E59BE02BB /* composite_credentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = composite_credentials.h; path = src/core/lib/security/credentials/composite/composite_credentials.h; sourceTree = "<group>"; };
 		3816D7FEA3709805C27BC5C7868D71C2 /* tls_gcc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_gcc.h; path = src/core/lib/gpr/tls_gcc.h; sourceTree = "<group>"; };
@@ -8963,7 +8971,7 @@
 		90B04B6D576858C609498C48E10D28F1 /* secure_endpoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secure_endpoint.h; path = src/core/lib/security/transport/secure_endpoint.h; sourceTree = "<group>"; };
 		90B9B71EA18CE0BF3BCCFB04F0BD4F74 /* status_metadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status_metadata.h; path = src/core/lib/transport/status_metadata.h; sourceTree = "<group>"; };
 		90DF7FFE96B65A15DCA9B29FA03A2CB2 /* http2_settings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = http2_settings.h; path = src/core/ext/transport/chttp2/transport/http2_settings.h; sourceTree = "<group>"; };
-		90EE0E1008AB434F2B2F3A96A273C56E /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		90EE0E1008AB434F2B2F3A96A273C56E /* UserModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		90F4FEC419E15CCA28904BAE9D0E1F88 /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = src/core/lib/http/parser.h; sourceTree = "<group>"; };
 		9113465A977326BF0AE4CF6522BDFFDB /* firestore_version.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = firestore_version.cc; path = Firestore/core/src/firebase/firestore/firestore_version.cc; sourceTree = "<group>"; };
 		9137AD246277F692060A18D80C17F6CA /* json_writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = json_writer.h; path = src/core/lib/json/json_writer.h; sourceTree = "<group>"; };
@@ -11281,7 +11289,7 @@
 		213A10CCF5F9C9CF65AA3E93B9F3F058 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				90EE0E1008AB434F2B2F3A96A273C56E /* User.swift */,
+				90EE0E1008AB434F2B2F3A96A273C56E /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -11386,6 +11394,7 @@
 		2FA2690665C7115BFAC007748103F772 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				37E75D65243279660014AA9C /* AnalyticsRepo */,
 				213A10CCF5F9C9CF65AA3E93B9F3F058 /* Model */,
 				29DF170745EF502BDB961C333B7A5C3E /* View */,
 				30F7E5046B25EE4EE8B1311958555AA2 /* ViewModel */,
@@ -11569,6 +11578,24 @@
 				E401A54EE1A43D46C27468E6E67A1BCE /* Support Files */,
 			);
 			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		37E75D65243279660014AA9C /* AnalyticsRepo */ = {
+			isa = PBXGroup;
+			children = (
+				37E75D6B24327A170014AA9C /* AnalyticsLoginRepo.swift */,
+				37E75D6D24327A420014AA9C /* AnalyticsLoginRepoConstants.swift */,
+			);
+			path = AnalyticsRepo;
+			sourceTree = "<group>";
+		};
+		37E75D662432799C0014AA9C /* AnalyticseRepo */ = {
+			isa = PBXGroup;
+			children = (
+				37E75D67243279C00014AA9C /* AnalyticsRecipeRepo.swift */,
+				37E75D69243279F20014AA9C /* AnalyticsRecipeRepoConstants.swift */,
+			);
+			path = AnalyticseRepo;
 			sourceTree = "<group>";
 		};
 		38DEB142205095EBB2575BB488D9D904 /* variant */ = {
@@ -11762,6 +11789,7 @@
 		55ADA037F223460CB412431C4207B10F /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				37E75D662432799C0014AA9C /* AnalyticseRepo */,
 				9756ECFE4194377B1A5A264C225F99CC /* Recipe.swift */,
 				D9E12D19935B0AFB41370C184A778B28 /* RecipeRequest.swift */,
 			);
@@ -17848,14 +17876,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E75D6A243279F20014AA9C /* AnalyticsRecipeRepoConstants.swift in Sources */,
 				8A77ACBA2BB24D21F912C9AB3ACA4CE0 /* Constants.swift in Sources */,
 				972FA4315FD3FF50D24D922453A20BCE /* Dev_Pod-dummy.m in Sources */,
 				80C059BB2388758652C5787526556398 /* Recipe.swift in Sources */,
+				37E75D6E24327A420014AA9C /* AnalyticsLoginRepoConstants.swift in Sources */,
 				238709C1CE996F3B2B64755CEF65EC7E /* RecipeRequest.swift in Sources */,
-				C5FAFB957AE663D0C1D96F3DD1EECC31 /* User.swift in Sources */,
+				C5FAFB957AE663D0C1D96F3DD1EECC31 /* UserModel.swift in Sources */,
 				890C99E5B1B25DD62AE6304E0D0449C9 /* UserViewModel.swift in Sources */,
 				37A3366F2432278E001EB8D0 /* UserProtocol.swift in Sources */,
 				73F5A1C520140A4ECB7FFF69177AD8BB /* Utilities.swift in Sources */,
+				37E75D6C24327A170014AA9C /* AnalyticsLoginRepo.swift in Sources */,
+				37E75D68243279C00014AA9C /* AnalyticsRecipeRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
