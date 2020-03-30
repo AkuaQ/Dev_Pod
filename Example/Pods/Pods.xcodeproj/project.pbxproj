@@ -11598,6 +11598,22 @@
 			path = AnalyticseRepo;
 			sourceTree = "<group>";
 		};
+		37E75D6F24327CC50014AA9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9756ECFE4194377B1A5A264C225F99CC /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37E75D7024327CCE0014AA9C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D9E12D19935B0AFB41370C184A778B28 /* RecipeRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		38DEB142205095EBB2575BB488D9D904 /* variant */ = {
 			isa = PBXGroup;
 			children = (
@@ -11789,9 +11805,9 @@
 		55ADA037F223460CB412431C4207B10F /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				37E75D7024327CCE0014AA9C /* Service */,
+				37E75D6F24327CC50014AA9C /* Model */,
 				37E75D662432799C0014AA9C /* AnalyticseRepo */,
-				9756ECFE4194377B1A5A264C225F99CC /* Recipe.swift */,
-				D9E12D19935B0AFB41370C184A778B28 /* RecipeRequest.swift */,
 			);
 			name = Recipe;
 			path = Dev_Pod/Classes/Recipe;
