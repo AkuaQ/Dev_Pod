@@ -27,4 +27,3 @@ class AnalyticsLoginRepoConstants {
         static let signUpButton = "sign_up_button_pressed"
     }
 }
-

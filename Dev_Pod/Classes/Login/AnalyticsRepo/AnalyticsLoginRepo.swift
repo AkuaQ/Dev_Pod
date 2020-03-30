@@ -25,4 +25,3 @@ public struct AnalyticsLoginRepo {
         Analytics.logEvent(AnalyticsLoginRepoConstants.SignUpPage.signUpButton, parameters: nil)
     }
 }
-
