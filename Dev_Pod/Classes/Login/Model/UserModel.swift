@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-struct User: UserModelProtocol {
+public struct UserModel: UserModelProtocol {
     public var firstName: String
     public var lastName: String
     public var email: String
@@ -62,5 +62,11 @@ struct User: UserModelProtocol {
                     complete(errorMessage)
             }
         }
+    }
+    public init(firstName: String, lastName: String, email: String, password: String) {
+        self.firstName = firstName;
+        self.lastName = lastName;
+        self.email = email;
+        self.password = password;
     }
 }
