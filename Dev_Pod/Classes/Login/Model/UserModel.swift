@@ -9,11 +9,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-<<<<<<< HEAD:Dev_Pod/Classes/Login/Model/User.swift
-struct UserModel: UserModelProtocol {
-=======
 public struct UserModel: UserModelProtocol {
->>>>>>> master:Dev_Pod/Classes/Login/Model/UserModel.swift
     public var firstName: String
     public var lastName: String
     public var email: String
