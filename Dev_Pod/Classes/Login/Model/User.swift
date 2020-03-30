@@ -41,7 +41,8 @@ struct User: UserModelProtocol {
                 database.collection("users").addDocument(data: ["firstname": firstName,
                                                                 "lastname": lastName,
                                                                 "uid": result!.user.uid]) { (error) in
-                                                                    //if not nil then there was an error with creating first name and last name
+                                                                    //if not nil then there was an error
+                                                                    //with creating first name and last name
                                                                     if error != nil {
                                                                         //Show error message
                                                                         errorMessage = error!.localizedDescription
