@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseAuth
 import FirebaseFirestore
+
 protocol UserModelProtocol {
     func addUser(with firstName: String, lastName: String,
                  email: String, and password: String, complete: @escaping ( _ error: String) -> Void)

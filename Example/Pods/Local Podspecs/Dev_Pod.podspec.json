@@ -2,7 +2,7 @@
   "name": "Dev_Pod",
   "version": "0.1.0",
   "summary": "Dev_Pod holds the logic of firstApp",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "This app searches through a collection of recipes of food inside of your kitchen to create recipes from.",
   "homepage": "https://github.com/AkuaQ/Dev_Pod",
   "license": {
     "type": "MIT",
@@ -18,5 +18,26 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "Dev_Pod/**/*.swift"
+  "source_files": "Dev_Pod/Classes/**/*",
+  "static_framework": true,
+  "dependencies": {
+    "Firebase": [
+
+    ],
+    "SwiftLint": [
+
+    ],
+    "Firebase/Core": [
+
+    ],
+    "Firebase/Analytics": [
+
+    ],
+    "Firebase/Auth": [
+
+    ],
+    "Firebase/Firestore": [
+
+    ]
+  }
 }

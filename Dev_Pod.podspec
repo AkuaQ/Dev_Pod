@@ -44,5 +44,5 @@ This app searches through a collection of recipes of food inside of your kitchen
   s.dependency 'Firebase/Core'
   s.dependency 'Firebase/Analytics'
   s.dependency 'Firebase/Auth'
-  s.dependency 'Firebase/Database'
+  s.dependency 'Firebase/Firestore'
 end
