@@ -27,10 +27,10 @@ struct User: UserModelProtocol {
     }
 
     public func addUser(with firstName: String, lastName: String, email: String,
-                 and password: String, complete: @escaping ( _ error: String) -> Void) {
+                        and password: String, complete: @escaping ( _ error: String) -> Void) {
         var errorMessage = ""
         Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-        //Check for errors
+            //Check for errors
             if err != nil {
                 //There was an error creating the user
                 errorMessage = "Error creating user"
@@ -41,15 +41,15 @@ struct User: UserModelProtocol {
                 database.collection("users").addDocument(data: ["firstname": firstName,
                                                                 "lastname": lastName,
                                                                 "uid": result!.user.uid]) { (error) in
-                    //if not nil then there was an error with creating first name and last name
-                    if error != nil {
-                        //Show error message
-                        errorMessage = error!.localizedDescription
-                        complete(errorMessage)
-                    } else {
-                        errorMessage = ""
-                        complete(errorMessage)
-                    }
+                                                                    //if not nil then there was an error with creating first name and last name
+                                                                    if error != nil {
+                                                                        //Show error message
+                                                                        errorMessage = error!.localizedDescription
+                                                                        complete(errorMessage)
+                                                                    } else {
+                                                                        errorMessage = ""
+                                                                        complete(errorMessage)
+                                                                    }
                 }
             }
         }
@@ -70,4 +70,3 @@ struct User: UserModelProtocol {
         }
     }
 }
-

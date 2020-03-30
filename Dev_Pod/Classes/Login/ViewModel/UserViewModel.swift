@@ -13,7 +13,7 @@ public struct UserViewModel {
     }
 
     public func addUser(with firstName: String, lastName: String, email: String,
-                 and password: String, complete: @escaping ( _ error: String) -> Void) {
+                        and password: String, complete: @escaping ( _ error: String) -> Void) {
         let user = User(firstName: firstName, lastName: lastName, email: email, password: password)
         user.addUser(with: firstName, lastName: lastName, email: email, and: password) {(errorMessage) in
             complete(errorMessage)
