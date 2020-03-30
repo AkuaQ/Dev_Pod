@@ -27,5 +27,4 @@ public class AnalyticsRecipeRepoConstants {
     public struct WebPage {
         public static let webBrowsed = "web_page_browsed"
     }
-    public init() {}
 }
