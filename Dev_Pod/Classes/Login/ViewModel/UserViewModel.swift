@@ -26,5 +26,8 @@ public struct UserViewModel {
             complete(errorMessage)
         }
     }
-    public init() {}
+    weak var userView: UserViewProtocol?
+    public init( view: UserViewProtocol) {
+        self.userView = view
+    }
 }

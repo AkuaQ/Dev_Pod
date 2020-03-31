@@ -949,6 +949,7 @@
 		37E75D8024329BFA0014AA9C /* FavouriteObjectiveCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D7F24329BFA0014AA9C /* FavouriteObjectiveCModel.m */; };
 		37E75D8324329CB80014AA9C /* FavouriteObjectiveCViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E75D8224329CB80014AA9C /* FavouriteObjectiveCViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37E75D8524329E340014AA9C /* FavouriteObjectiveCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D8424329E340014AA9C /* FavouriteObjectiveCViewModel.m */; };
+		37E75D962432F5C70014AA9C /* UserViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E75D952432F5C70014AA9C /* UserViewProtocol.swift */; };
 		37ECD01213A65709CBDBA68FCC362C2E /* json_common.h in Copy src/core/lib/json Private Headers */ = {isa = PBXBuildFile; fileRef = 2C28C0CB169746742C13B2DF4F0C7C02 /* json_common.h */; };
 		37FEFF97DBD25BF8B782EBE591F27FA4 /* status_util.h in Copy src/core/lib/channel Private Headers */ = {isa = PBXBuildFile; fileRef = 2B181CE1303FEC732FB0B6BE826C0CE7 /* status_util.h */; };
 		380A3DA74DF383965545762CB04C6A19 /* pollset_set.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F402C1C1E46263DCD67414F3AC1161 /* pollset_set.h */; };
@@ -8030,6 +8031,7 @@
 		37E75D7F24329BFA0014AA9C /* FavouriteObjectiveCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavouriteObjectiveCModel.m; sourceTree = "<group>"; };
 		37E75D8224329CB80014AA9C /* FavouriteObjectiveCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavouriteObjectiveCViewModel.h; sourceTree = "<group>"; };
 		37E75D8424329E340014AA9C /* FavouriteObjectiveCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavouriteObjectiveCViewModel.m; sourceTree = "<group>"; };
+		37E75D952432F5C70014AA9C /* UserViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewProtocol.swift; sourceTree = "<group>"; };
 		3803E32B6F9539211D81316BF91B986C /* internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = internal.h; path = crypto/bytestring/internal.h; sourceTree = "<group>"; };
 		38124623729A5CEF052AEE7E59BE02BB /* composite_credentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = composite_credentials.h; path = src/core/lib/security/credentials/composite/composite_credentials.h; sourceTree = "<group>"; };
 		3816D7FEA3709805C27BC5C7868D71C2 /* tls_gcc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_gcc.h; path = src/core/lib/gpr/tls_gcc.h; sourceTree = "<group>"; };
@@ -11378,6 +11380,7 @@
 			children = (
 				13E49F15A94AA526033A7568D22F7327 /* Constants.swift */,
 				5F33B6503B23A38E2A1F0749202222F4 /* Utilities.swift */,
+				37E75D952432F5C70014AA9C /* UserViewProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -17919,6 +17922,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E75D6A243279F20014AA9C /* AnalyticsRecipeRepoConstants.swift in Sources */,
+				37E75D962432F5C70014AA9C /* UserViewProtocol.swift in Sources */,
 				8A77ACBA2BB24D21F912C9AB3ACA4CE0 /* Constants.swift in Sources */,
 				972FA4315FD3FF50D24D922453A20BCE /* Dev_Pod-dummy.m in Sources */,
 				80C059BB2388758652C5787526556398 /* Recipe.swift in Sources */,
