@@ -18,6 +18,10 @@ public class Utilities {
     public static func styleFilledButton(_ button: UIButton) {
         // Filled rounded corner style
         button.layer.cornerRadius = 6
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 5, height: 5)
+        button.layer.shadowRadius = 5
+        button.layer.shadowOpacity = 0.25
     }
     public static func styleHollowButton(_ button: UIButton) {
         // Hollow rounded corner style
