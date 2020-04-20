@@ -43,7 +43,7 @@ public struct FoodRequest {
         }
         dataTask.resume()
     }
-    
+
     public init(foodQuery: String, typeQuery: String) {
         self.foodQuery = foodQuery
         self.typeQuery = typeQuery

@@ -12,7 +12,7 @@ class AnalyticsLoginRepoConstants {
         static let signUpButton = "landing_sign_up_button_pressed"
         static let loginButton = "landing_login_button_pressed"
     }
-    
+
     struct LoginPage {
         static let emailTextField = "email_textfield_pressed"
         static let passwordTextField = "password_textfield_pressed"

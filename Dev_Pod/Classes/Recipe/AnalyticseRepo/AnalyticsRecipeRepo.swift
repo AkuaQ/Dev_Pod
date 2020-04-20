@@ -32,7 +32,7 @@ import FirebaseAnalytics
     public static func recipeDetailPageBrowsed() {
         Analytics.logEvent(AnalyticsRecipeRepoConstants.RecipeDetailPage.recipeDetail, parameters: nil)
     }
-    
+
     public static func webPageBrowsed() {
         Analytics.logEvent(AnalyticsRecipeRepoConstants.WebPage.webBrowsed, parameters: nil)
     }

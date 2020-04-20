@@ -38,7 +38,7 @@ public class Utilities {
         textfield.layer.borderColor = UIColor.red.cgColor
         textfield.layer.cornerRadius = 6
     }
-    
+
     public func styleBackgroundView(_ view: UIView) {
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 2, height: 2)

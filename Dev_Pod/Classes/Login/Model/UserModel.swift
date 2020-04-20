@@ -48,7 +48,7 @@ public struct UserModel: UserModelProtocol {
             }
         }
     }
-    
+
     public func loginUser(with email: String, and password: String, complete: @escaping ( _ error: String) -> Void) {
         var errorMessage = ""
         Auth.auth().signIn(withEmail: email, password: password) { ( _, error) in

@@ -9,7 +9,6 @@ import Foundation
 
 public struct FoodResults: Decodable {
     public var resultCount: [FoodDetails]
-    
     public enum CodingKeys: String, CodingKey {
         case resultCount = "results"
     }

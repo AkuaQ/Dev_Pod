@@ -18,7 +18,7 @@ public class AnalyticsRecipeRepoConstants {
     public struct RecipeDetailPage {
         public static let recipeDetail = "recipe_detail_browsed"
     }
-    
+
     public struct HomePage {
         public static let searchIngredients = "search_ingredients_pressed"
         public static let tabHome = "home_tab_pressed"
