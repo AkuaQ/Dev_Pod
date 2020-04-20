@@ -34,7 +34,7 @@ public struct FoodRequest {
                 
                 do {
                     let foodList = try JSONDecoder().decode(FoodResults.self, from: data)
-                    
+
                     completionHandler(foodList.resultCount)
                 } catch let error {
                     print(error)

@@ -9,12 +9,12 @@ public class AnalyticsRecipeRepoConstants {
     public struct FavouritesPage {
         public static let tabFavourites = "favourites_tab_pressed"
     }
-    
+
     public struct RecipeListPage {
         public static let searchRecipes = "search_recipes_pressed"
         public static let tabRecipeList = "recipe_list_tab_pressed"
     }
-    
+
     public struct RecipeDetailPage {
         public static let recipeDetail = "recipe_detail_browsed"
     }
