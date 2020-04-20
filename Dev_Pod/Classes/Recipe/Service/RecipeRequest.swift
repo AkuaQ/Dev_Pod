@@ -14,10 +14,10 @@ public struct FoodRequest {
     public let defaultSession = URLSession(configuration: .default)
 
     public var dataTask: URLSessionDataTask?
-    
+
     public func getSearchResult(completionHandler: @escaping([FoodDetails]) -> Void) {
         dataTask?.cancel()
-        
+
         let resourceString = "http://www.recipepuppy.com/api/?"
         let countSpaces = foodQuery.replacingOccurrences(of: " ", with: "+")
         let resourceQuery = "\(typeQuery)=\(countSpaces)"
