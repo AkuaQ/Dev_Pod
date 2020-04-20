@@ -924,6 +924,7 @@
 		3708768C5283CE2445206F885B64A675 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 15894BE3B92420E8DD61E1B25A9A93AC /* ec.h */; };
 		371C1B9D244DAF4C00B47127 /* LoginAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C1B9C244DAF4C00B47127 /* LoginAnimations.swift */; };
 		371C1BA0244DAF9800B47127 /* RecipeAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C1B9F244DAF9800B47127 /* RecipeAnimations.swift */; };
+		371C1BA2244DDE5400B47127 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C1BA1244DDE5400B47127 /* Gradients.swift */; };
 		371D6E78B0FABE9CE93026F66D1E57BE /* statusor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93ED4C347556A0AFCFE9A9A07A4557BB /* statusor.cc */; settings = {COMPILER_FLAGS = "$(inherited) -Wreorder -Werror=reorder -Wno-comma -fno-objc-arc"; }; };
 		3730B54760086A489D3046C979F664CC /* padding.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F19FF7264CFF21BF1D3E7774EA210AC /* padding.c */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
 		3735EDF328453DF8A053950374780E3D /* bits.h in Copy base/internal Public Headers */ = {isa = PBXBuildFile; fileRef = D8E30D6D2F6DC5AD5907664DAFA50615 /* bits.h */; };
@@ -8019,6 +8020,7 @@
 		36FFA7E3448FA2848D54398CEB95DA52 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		371C1B9C244DAF4C00B47127 /* LoginAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAnimations.swift; sourceTree = "<group>"; };
 		371C1B9F244DAF9800B47127 /* RecipeAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAnimations.swift; sourceTree = "<group>"; };
+		371C1BA1244DDE5400B47127 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
 		37343DC18016463B22C44C21015F3687 /* FIREmailLinkSignInRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIREmailLinkSignInRequest.h; path = Firebase/Auth/Source/Backend/RPC/FIREmailLinkSignInRequest.h; sourceTree = "<group>"; };
 		375AB656FA5BA6D1F7D52D364AF3926C /* log_android.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_android.cc; path = src/core/lib/gpr/log_android.cc; sourceTree = "<group>"; };
 		3786FBEE4BAA6BB253A7BDF1A59C95D1 /* pcy_int.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pcy_int.h; path = crypto/x509v3/pcy_int.h; sourceTree = "<group>"; };
@@ -11386,6 +11388,7 @@
 				5F33B6503B23A38E2A1F0749202222F4 /* Utilities.swift */,
 				37E75D952432F5C70014AA9C /* UserViewProtocol.swift */,
 				371C1B9C244DAF4C00B47127 /* LoginAnimations.swift */,
+				371C1BA1244DDE5400B47127 /* Gradients.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -17951,6 +17954,7 @@
 				371C1BA0244DAF9800B47127 /* RecipeAnimations.swift in Sources */,
 				238709C1CE996F3B2B64755CEF65EC7E /* RecipeRequest.swift in Sources */,
 				C5FAFB957AE663D0C1D96F3DD1EECC31 /* UserModel.swift in Sources */,
+				371C1BA2244DDE5400B47127 /* Gradients.swift in Sources */,
 				890C99E5B1B25DD62AE6304E0D0449C9 /* UserViewModel.swift in Sources */,
 				37A3366F2432278E001EB8D0 /* UserProtocol.swift in Sources */,
 				371C1B9D244DAF4C00B47127 /* LoginAnimations.swift in Sources */,
