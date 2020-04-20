@@ -922,6 +922,8 @@
 		3706D19F0BC424C6E4F756DE264BB6C4 /* credentials_generic.cc in Sources */ = {isa = PBXBuildFile; fileRef = CDC2109ED84B6C3994B3AB218B427E8B /* credentials_generic.cc */; settings = {COMPILER_FLAGS = "-DGRPC_ARES=0 -DPB_FIELD_32BIT -DGRPC_SHADOW_BORINGSSL_SYMBOLS -fno-objc-arc"; }; };
 		3706D2161385A370978BCB83CB55C756 /* FBLPromise+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D67A0043D7BADAF7E10E551F9ACD1AE /* FBLPromise+Catch.h */; };
 		3708768C5283CE2445206F885B64A675 /* ec.h in Headers */ = {isa = PBXBuildFile; fileRef = 15894BE3B92420E8DD61E1B25A9A93AC /* ec.h */; };
+		371C1B9D244DAF4C00B47127 /* LoginAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C1B9C244DAF4C00B47127 /* LoginAnimations.swift */; };
+		371C1BA0244DAF9800B47127 /* RecipeAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371C1B9F244DAF9800B47127 /* RecipeAnimations.swift */; };
 		371D6E78B0FABE9CE93026F66D1E57BE /* statusor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 93ED4C347556A0AFCFE9A9A07A4557BB /* statusor.cc */; settings = {COMPILER_FLAGS = "$(inherited) -Wreorder -Werror=reorder -Wno-comma -fno-objc-arc"; }; };
 		3730B54760086A489D3046C979F664CC /* padding.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F19FF7264CFF21BF1D3E7774EA210AC /* padding.c */; settings = {COMPILER_FLAGS = "-DOPENSSL_NO_ASM -GCC_WARN_INHIBIT_ALL_WARNINGS -w -fno-objc-arc"; }; };
 		3735EDF328453DF8A053950374780E3D /* bits.h in Copy base/internal Public Headers */ = {isa = PBXBuildFile; fileRef = D8E30D6D2F6DC5AD5907664DAFA50615 /* bits.h */; };
@@ -8015,6 +8017,8 @@
 		36EADB8325A7660AD9C4AAB2929EAD5D /* FBLPromise+Do.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Do.m"; path = "Sources/FBLPromises/FBLPromise+Do.m"; sourceTree = "<group>"; };
 		36F9BB1F049DF5EB6E001FDC8535891C /* FIRAuthDataResult_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthDataResult_Internal.h; path = Firebase/Auth/Source/Auth/FIRAuthDataResult_Internal.h; sourceTree = "<group>"; };
 		36FFA7E3448FA2848D54398CEB95DA52 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
+		371C1B9C244DAF4C00B47127 /* LoginAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAnimations.swift; sourceTree = "<group>"; };
+		371C1B9F244DAF9800B47127 /* RecipeAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAnimations.swift; sourceTree = "<group>"; };
 		37343DC18016463B22C44C21015F3687 /* FIREmailLinkSignInRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIREmailLinkSignInRequest.h; path = Firebase/Auth/Source/Backend/RPC/FIREmailLinkSignInRequest.h; sourceTree = "<group>"; };
 		375AB656FA5BA6D1F7D52D364AF3926C /* log_android.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = log_android.cc; path = src/core/lib/gpr/log_android.cc; sourceTree = "<group>"; };
 		3786FBEE4BAA6BB253A7BDF1A59C95D1 /* pcy_int.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pcy_int.h; path = crypto/x509v3/pcy_int.h; sourceTree = "<group>"; };
@@ -11381,6 +11385,7 @@
 				13E49F15A94AA526033A7568D22F7327 /* Constants.swift */,
 				5F33B6503B23A38E2A1F0749202222F4 /* Utilities.swift */,
 				37E75D952432F5C70014AA9C /* UserViewProtocol.swift */,
+				371C1B9C244DAF4C00B47127 /* LoginAnimations.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -11582,6 +11587,14 @@
 				5C75CBF42C8E6CEEF439556AEEA5CD93 /* policy_checks.h */,
 			);
 			name = config;
+			sourceTree = "<group>";
+		};
+		371C1B9E244DAF8200B47127 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				371C1B9F244DAF9800B47127 /* RecipeAnimations.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		379B3C2B61B1E0A72D95C4E6B95986D7 /* FirebaseAnalytics */ = {
@@ -11830,6 +11843,7 @@
 		55ADA037F223460CB412431C4207B10F /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
+				371C1B9E244DAF8200B47127 /* View */,
 				37E75D8124329C830014AA9C /* ViewModel */,
 				37E75D7024327CCE0014AA9C /* Service */,
 				37E75D6F24327CC50014AA9C /* Model */,
@@ -16446,6 +16460,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					73CDC3D182DB953135F62609681B443D = {
+						LastSwiftMigration = 1140;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -17929,10 +17948,12 @@
 				37E75D8524329E340014AA9C /* FavouriteObjectiveCViewModel.m in Sources */,
 				37E75D6E24327A420014AA9C /* AnalyticsLoginRepoConstants.swift in Sources */,
 				37E75D8024329BFA0014AA9C /* FavouriteObjectiveCModel.m in Sources */,
+				371C1BA0244DAF9800B47127 /* RecipeAnimations.swift in Sources */,
 				238709C1CE996F3B2B64755CEF65EC7E /* RecipeRequest.swift in Sources */,
 				C5FAFB957AE663D0C1D96F3DD1EECC31 /* UserModel.swift in Sources */,
 				890C99E5B1B25DD62AE6304E0D0449C9 /* UserViewModel.swift in Sources */,
 				37A3366F2432278E001EB8D0 /* UserProtocol.swift in Sources */,
+				371C1B9D244DAF4C00B47127 /* LoginAnimations.swift in Sources */,
 				73F5A1C520140A4ECB7FFF69177AD8BB /* Utilities.swift in Sources */,
 				37E75D6C24327A170014AA9C /* AnalyticsLoginRepo.swift in Sources */,
 				37E75D68243279C00014AA9C /* AnalyticsRecipeRepo.swift in Sources */,
@@ -18946,6 +18967,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBAE09A85868A0C6709FF9163AD55664 /* abseil.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -18966,6 +18988,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -19149,6 +19172,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DBAE09A85868A0C6709FF9163AD55664 /* abseil.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -11,8 +11,8 @@
 @implementation FavouriteModel
 
 - (id)initWithName:(NSString *)title
-andIngredients:(NSString *)ingredients
-andWebsite:(NSString *)href
+    andIngredients:(NSString *)ingredients
+        andWebsite:(NSString *)href
           andImage:(NSString *)thumbnail {
     self = [super init];
     if (self) {

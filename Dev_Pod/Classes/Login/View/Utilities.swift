@@ -15,6 +15,7 @@ public class Utilities {
         textfield.layer.borderColor = UIColor.init(red: 200/255, green: 135/255, blue: 215/255, alpha: 1).cgColor
         textfield.layer.cornerRadius = 6
     }
+
     public static func styleFilledButton(_ button: UIButton) {
         // Filled rounded corner style
         button.layer.cornerRadius = 6
@@ -23,17 +24,33 @@ public class Utilities {
         button.layer.shadowRadius = 5
         button.layer.shadowOpacity = 0.25
     }
+
     public static func styleHollowButton(_ button: UIButton) {
         // Hollow rounded corner style
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.init(red: 200/255, green: 135/255, blue: 215/255, alpha: 1).cgColor
         button.layer.cornerRadius = 6
     }
+
     public static func styleErrorTextField(_ textfield: UITextField) {
         // Hollow rounded corner style
         textfield.layer.borderWidth = 1
         textfield.layer.borderColor = UIColor.red.cgColor
         textfield.layer.cornerRadius = 6
+    }
+
+    public func styleBackgroundView(_ view: UIView) {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 2, height: 2)
+        view.layer.shadowRadius = 19
+        view.layer.shadowOpacity = 0.5
+    }
+
+    public func styleBackgroundCardView(_ view: UIView) {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 2, height: 2)
+        view.layer.shadowRadius = 3
+        view.layer.shadowOpacity = 0.7
     }
     public init() {}
 }

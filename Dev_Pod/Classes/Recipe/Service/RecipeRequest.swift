@@ -16,7 +16,7 @@ public struct FoodRequest {
     public var dataTask: URLSessionDataTask?
 
     public func getSearchResult(completionHandler: @escaping([FoodDetails]) -> Void) {
-       dataTask?.cancel()
+        dataTask?.cancel()
 
         let resourceString = "http://www.recipepuppy.com/api/?"
         let countSpaces = foodQuery.replacingOccurrences(of: " ", with: "+")

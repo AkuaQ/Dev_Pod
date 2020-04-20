@@ -14,7 +14,7 @@ public struct UserModel: UserModelProtocol {
     public var lastName: String
     public var email: String
     public var password: String
-
+    
     public func getEmail() -> String {
         return self.email
     }
@@ -53,13 +53,13 @@ public struct UserModel: UserModelProtocol {
         var errorMessage = ""
         Auth.auth().signIn(withEmail: email, password: password) { ( _, error) in
             //Check for errors
-                if error != nil {
-                    //Cannot sign in
-                    errorMessage = error!.localizedDescription
-                    complete(errorMessage)
-                } else {
-                    errorMessage = ""
-                    complete(errorMessage)
+            if error != nil {
+                //Cannot sign in
+                errorMessage = error!.localizedDescription
+                complete(errorMessage)
+            } else {
+                errorMessage = ""
+                complete(errorMessage)
             }
         }
     }

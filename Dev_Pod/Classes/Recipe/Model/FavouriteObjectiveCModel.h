@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *thumbnail;
 
 - (id)initWithName:(NSString *)title
-andIngredients:(NSString *)ingredients
-andWebsite:(NSString *)href
-  andImage:(NSString *)thumbnail;
+    andIngredients:(NSString *)ingredients
+        andWebsite:(NSString *)href
+          andImage:(NSString *)thumbnail;
 @end
 NS_ASSUME_NONNULL_END
