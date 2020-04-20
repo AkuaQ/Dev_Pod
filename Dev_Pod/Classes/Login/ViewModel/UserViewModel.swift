@@ -11,7 +11,7 @@ public struct UserViewModel {
         let user = UserModel(firstName: "", lastName: "", email: email, password: password)
         return user.getEmail()
     }
-
+    
     public func addUser(with firstName: String, lastName: String, email: String,
                         and password: String, complete: @escaping ( _ error: String) -> Void) {
         let user = UserModel(firstName: firstName, lastName: lastName, email: email, password: password)
@@ -19,7 +19,7 @@ public struct UserViewModel {
             complete(errorMessage)
         }
     }
-
+    
     public func loginUser(with email: String, and password: String, complete: @escaping ( _ error: String) -> Void) {
         let user = UserModel(firstName: "", lastName: "", email: email, password: password)
         user.loginUser(with: email, and: password) { ( errorMessage) in
