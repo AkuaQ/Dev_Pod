@@ -20,7 +20,7 @@ public struct AnalyticsLoginRepo {
     public static func loginPageLoginTapped() {
         Analytics.logEvent(AnalyticsLoginRepoConstants.LoginPage.loginButton, parameters: nil)
     }
-    
+
     public static func signUpPageCreateAccountTapped() {
         Analytics.logEvent(AnalyticsLoginRepoConstants.SignUpPage.signUpButton, parameters: nil)
     }

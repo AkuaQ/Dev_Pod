@@ -19,7 +19,7 @@ public struct UserViewModel {
             complete(errorMessage)
         }
     }
-    
+
     public func loginUser(with email: String, and password: String, complete: @escaping ( _ error: String) -> Void) {
         let user = UserModel(firstName: "", lastName: "", email: email, password: password)
         user.loginUser(with: email, and: password) { ( errorMessage) in

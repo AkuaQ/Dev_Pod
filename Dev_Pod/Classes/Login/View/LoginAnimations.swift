@@ -18,7 +18,7 @@ public class LoginAnimations {
         animation.toValue = NSValue(cgPoint: CGPoint(x: textfield.center.x + 5, y: textfield.center.y))
         textfield.layer.add(animation, forKey: "position")
     }
-    
+
     public static func pulseButton(_ button: UIButton) {
         UIButton.animate(withDuration: 0.2,
                          animations: {

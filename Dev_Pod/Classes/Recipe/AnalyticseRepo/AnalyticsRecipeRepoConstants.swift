@@ -23,7 +23,7 @@ public class AnalyticsRecipeRepoConstants {
         public static let searchIngredients = "search_ingredients_pressed"
         public static let tabHome = "home_tab_pressed"
     }
-    
+
     public struct WebPage {
         public static let webBrowsed = "web_page_browsed"
     }

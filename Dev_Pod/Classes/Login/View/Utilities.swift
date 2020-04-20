@@ -45,7 +45,7 @@ public class Utilities {
         view.layer.shadowRadius = 19
         view.layer.shadowOpacity = 0.5
     }
-    
+
     public func styleBackgroundCardView(_ view: UIView) {
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 2, height: 2)
