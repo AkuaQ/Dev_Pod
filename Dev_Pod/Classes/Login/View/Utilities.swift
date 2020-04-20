@@ -39,14 +39,14 @@ public class Utilities {
         textfield.layer.cornerRadius = 6
     }
 
-    public func styleBackgroundView(_ view: UIView) {
+    public static func styleBackgroundView(_ view: UIView) {
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 2, height: 2)
         view.layer.shadowRadius = 19
         view.layer.shadowOpacity = 0.5
     }
 
-    public func styleBackgroundCardView(_ view: UIView) {
+    public static func styleBackgroundCardView(_ view: UIView) {
         view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOffset = CGSize(width: 2, height: 2)
         view.layer.shadowRadius = 3
