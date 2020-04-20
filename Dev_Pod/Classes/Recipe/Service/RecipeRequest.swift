@@ -31,7 +31,7 @@ public struct FoodRequest {
                 let response = response as? HTTPURLResponse,
                 response.statusCode == 200 {
                 print(data)
-                
+
                 do {
                     let foodList = try JSONDecoder().decode(FoodResults.self, from: data)
 
