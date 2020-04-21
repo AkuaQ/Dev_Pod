@@ -6,8 +6,7 @@
 //
 
 import Foundation
-class Gradient: UIView {
-
+public class Gradient: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -32,7 +31,7 @@ class Gradient: UIView {
         theLayer.frame = self.bounds
     }
 
-    override class var layerClass: AnyClass {
+    public override class var layerClass: AnyClass {
         return CAGradientLayer.self
     }
 }
