@@ -4,7 +4,8 @@
 //
 //  Created by Akua Afrane-Okese on 2020/03/30.
 //
-
+#ifndef FavouriteObjectiveCViewModel_h
+#define FavouriteObjectiveCViewModel_h
 #import <Foundation/Foundation.h>
 #import "FavouriteObjectiveCModel.h"
 @import FirebaseFirestore;
@@ -18,3 +19,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+#endif

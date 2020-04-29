@@ -4,7 +4,8 @@
 //
 //  Created by Akua Afrane-Okese on 2020/03/30.
 //
-
+#ifndef FavouriteObjectiveCModel_h
+#define FavouriteObjectiveCModel_h
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -20,3 +21,4 @@ NS_ASSUME_NONNULL_BEGIN
           andImage:(NSString *)thumbnail;
 @end
 NS_ASSUME_NONNULL_END
+#endif
